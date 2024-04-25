@@ -6,3 +6,7 @@
 </div>
 
 ###
+
+<img src="https://raw.githubusercontent.com/csumi/csumi/output/snake.svg" alt="Snake animation" />
+
+###
