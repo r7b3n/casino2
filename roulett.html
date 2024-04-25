@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online kaszinó</title>
+    <style>
+    body {
+        background-color: darkred; /* Sötét piros háttér */
+        color: white; /* Fehér szöveg */
+        font-family: 'Courier New', Courier, monospace; /* Betűtípus */
+        margin: 0; /* Margók eltávolítása */
+        padding: 0; /* Padding eltávolítása */
+    }
+    
+    .menu {
+        display: flex; /* Flexbox elrendezés */
+        justify-content: center; /* Középre igazítás */
+        padding: 20px; /* Külső padding a menühöz */
+        position: fixed; /* Rögzített pozíció */
+        width: 100%; /* Teljes szélesség */
+        top: 0; /* Felülre igazítás */
+        z-index: 999; /* Z-index beállítása, hogy a menü a legtetején legyen */
+        background-color: rgba(0, 0, 0, 0.5); /* Fekete átlátszó háttér */
+    }
+    
+    .menu button {
+        background-color: #8B0000; /* Sötét piros gomb */
+        color: white; /* Fehér szöveg */
+        border: 2px solid black; /* Fekete keret */
+        padding: 10px 20px; /* Belső padding */
+        font-size: 16px; /* Betűméret */
+        cursor: pointer; /* Mutató változtatása */
+        margin: 0 10px; /* Külső margó a gombok között */
+        border-radius: 5px; /* Border sugár */
+    }
+    
+    .menu button:hover {
+        background-color: #B22222; /* Gomb színének változása, ha a mutató fölé kerül */
+    }
+    .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #B8860B, 0 0 40px #FF8C00, 0 0 50px #DAA520, 0 0 60px #FFA500, 0 0 70px #B8860B;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #B8860B, 0 0 40px #B8860B, 0 0 50px #B8860B, 0 0 60px #B8860B, 0 0 70px #B8860B, 0 0 80px #B8860B;
+    }
+  }
+  .card {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #a3d9a5; /* Világos zöld keret */
+}
+
+
+
+</style>
+
+<br> <br> <br> <br>
+<div class="menu">
+    <button onclick="window.location.href='fokaszinooldal.html'">Vissza a fő oldalra</button>
+    <button onclick="window.location.href='kockapoker.html'">Black Jack</button>
+    <button onclick="window.location.href='slotgep.html'">Kocka Póker</button>
+    <button onclick="window.location.href='blackjack.html'">BlackJack</button>
+</div>
+
+</body>
+</html>
