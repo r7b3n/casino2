@@ -7,38 +7,15 @@
     <title>Online kaszinó</title>
     <style>
     body {
-        background-color: darkred; /* Sötét piros háttér */
+      background-color: #8B0000;
+      background-image: url('');
         color: white; /* Fehér szöveg */
-        font-family: 'Courier New', Courier, monospace; /* Betűtípus */
+        font-family: 'Courier New', Courier, monospace;
         margin: 0; /* Margók eltávolítása */
         padding: 0; /* Padding eltávolítása */
     }
     
-    .menu {
-        display: flex; /* Flexbox elrendezés */
-        justify-content: center; /* Középre igazítás */
-        padding: 20px; /* Külső padding a menühöz */
-        position: fixed; /* Rögzített pozíció */
-        width: 100%; /* Teljes szélesség */
-        top: 0; /* Felülre igazítás */
-        z-index: 999; /* Z-index beállítása, hogy a menü a legtetején legyen */
-        background-color: rgba(0, 0, 0, 0.5); /* Fekete átlátszó háttér */
-    }
-    
-    .menu button {
-        background-color: #8B0000; /* Sötét piros gomb */
-        color: white; /* Fehér szöveg */
-        border: 2px solid black; /* Fekete keret */
-        padding: 10px 20px; /* Belső padding */
-        font-size: 16px; /* Betűméret */
-        cursor: pointer; /* Mutató változtatása */
-        margin: 0 10px; /* Külső margó a gombok között */
-        border-radius: 5px; /* Border sugár */
-    }
-    
-    .menu button:hover {
-        background-color: #B22222; /* Gomb színének változása, ha a mutató fölé kerül */
-    }
+
     .glow {
     font-size: 80px;
     color: #fff;
@@ -68,14 +45,53 @@
 
 
 </style>
+<style>
 
-<br> <br> <br> <br>
-<div class="menu">
-    <button onclick="window.location.href='fokaszinooldal.html'">Vissza a fő oldalra</button>
-    <button onclick="window.location.href='kockapoker.html'">Black Jack</button>
-    <button onclick="window.location.href='slotgep.html'">Kocka Póker</button>
-    <button onclick="window.location.href='blackjack.html'">BlackJack</button>
+  .button-container {
+display: flex;
+background-color: red;
+width: 1920px;
+height: 70px;
+align-items: center;
+justify-content: space-around;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+  rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+outline: 0 !important;
+border: 0 !important;
+width: 40x;
+height: 40px;
+border-radius: 80%;
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+transition: all ease-in-out 0.3s;
+cursor: pointer;
+font-size: large;
+}
+
+.button:hover {
+transform: translateY(-3px);
+}
+
+</style>
+
+</style>
+<div class="button-container">
+  <button class="button" onclick="window.location.href='fokaszinooldal.html'">Vissza a főoldalra</button>
+
+  <button class="button" onclick="window.location.href='kockapoker.html'">Kockapoker</button>
+ 
+  <button class="button" onclick="window.location.href='blackjack.html'">BlackJack</button>
+
+  <button class="button" onclick="window.location.href='slotgep.html'">Slot-gép</button>
+ 
+
 </div>
-
 </body>
 </html>
