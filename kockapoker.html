@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online kaszinó</title>
+    <style>
+    body {
+        background-color: darkred; /* Sötét piros háttér */
+        color: white; /* Fehér szöveg */
+        font-family: 'Courier New', Courier, monospace; /* Betűtípus */
+        margin: 0; /* Margók eltávolítása */
+        padding: 0; /* Padding eltávolítása */
+    }
+    
+    .menu {
+        display: flex; /* Flexbox elrendezés */
+        justify-content: center; /* Középre igazítás */
+        padding: 20px; /* Külső padding a menühöz */
+        position: fixed; /* Rögzített pozíció */
+        width: 100%; /* Teljes szélesség */
+        top: 0; /* Felülre igazítás */
+        z-index: 999; /* Z-index beállítása, hogy a menü a legtetején legyen */
+        background-color: rgba(0, 0, 0, 0.5); /* Fekete átlátszó háttér */
+    }
+    
+    .menu button {
+        background-color: #8B0000; /* Sötét piros gomb */
+        color: white; /* Fehér szöveg */
+        border: 2px solid black; /* Fekete keret */
+        padding: 10px 20px; /* Belső padding */
+        font-size: 16px; /* Betűméret */
+        cursor: pointer; /* Mutató változtatása */
+        margin: 0 10px; /* Külső margó a gombok között */
+        border-radius: 5px; /* Border sugár */
+    }
+    
+    .menu button:hover {
+        background-color: #B22222; /* Gomb színének változása, ha a mutató fölé kerül */
+    }
+  .card {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #a3d9a5;
+}
+
+
+</style>
+
+<br> <br> <br> <br>
+<div class="menu">
+    <button onclick="window.location.href='fokaszinooldal.html'">Vissza a fő oldalra</button>
+    <button onclick="window.location.href='kockapoker.html'">Black Jack</button>
+    <button onclick="window.location.href='slotgep.html'">Slot gép</button>
+    <button onclick="window.location.href='roulett.html'">Rulett</button>
+</div>
+<div class = "card">
+    <p>Szabályok</p><br>
+    <p>Cél: A cél a legjobb pókerkéz megszerzése a kockadobások eredményeként.<br>
+        Játékosok: Általában legalább két játékos szükséges a játékhoz.<br>
+        Dobás: Minden játékos egy adott számú dobókockát dob.<br>
+        Tét: A játékosok tétjeiket megteszik az első dobás előtt, és/vagy azután, hogy látták az eredményüket.<br>
+        Pókerkéz rangsora: A klasszikus pókerkéz rangsorát használják a játék során, például pár, két pár, három egyforma, stb.<br>
+        Dobások száma: Általában a játékosoknak lehetőségük van a kockák újbóli dobására egy vagy több alkalommal.<br>
+        Nyertes kiválasztása: A legjobb pókerkéz birtokosa nyeri a potot.</p>
+</div>
+
+
+</body>
+</html>
